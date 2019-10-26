@@ -26,6 +26,3 @@ def kmp(txt, sub):
     if j == len(sub):
         return i - j
     return -1
-
-
-print(kmp('askldasdfasdfaghadfjf', 'jf'))

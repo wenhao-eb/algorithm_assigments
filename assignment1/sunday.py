@@ -1,4 +1,4 @@
-def calShiftMat(st):
+def cal_shift_mat(st):
     dic = {}
     for i in range(len(st) - 1, -1, -1):
         if not dic.get(st[i]):
@@ -7,14 +7,14 @@ def calShiftMat(st):
     return dic
 
 
-def BM(txt, pat: str):
+def sun(txt, pat: str):
     if len(pat) > len(txt):
         return -1
     if pat == "":
         return 0
 
     # 偏移表
-    dic = calShiftMat(pat)
+    dic = cal_shift_mat(pat)
     idx = 0
 
     while idx + len(pat) <= len(txt):
@@ -39,4 +39,3 @@ def BM(txt, pat: str):
     return -1 if idx + len(pat) >= len(txt) else idx
 
 
-print(BM('laksdjflasdkjfla12312sdfasdfsdjfalsdkf', 'sdkf'))

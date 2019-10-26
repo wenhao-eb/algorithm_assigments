@@ -1,4 +1,4 @@
-def getNextVal(sub):
+def get_next_val(sub):
     _next = [0] * len(sub)
     _next[0] = -1
     i = 0
@@ -7,18 +7,17 @@ def getNextVal(sub):
         if j == -1 or sub[i] == sub[j]:
             i += 1
             j += 1
-            if(sub[i]!=sub[j]):
-                _next[i]=j
+            if sub[i] != sub[j]:
+                _next[i] = j
             else:
                 _next[i] = _next[j]
         else:
             j = _next[j]
     return _next
 
-def KMP(txt, sub):
 
-
-    _next = getNextVal(sub)
+def kmp_next_val(txt, sub):
+    _next = get_next_val(sub)
     i = 0
     j = 0
     while i < len(txt) and j < len(sub):
@@ -30,5 +29,3 @@ def KMP(txt, sub):
     if j == len(sub):
         return i - j
     return -1
-
-print(KMP('askldasdfasdfaghadfjf','jf'))
