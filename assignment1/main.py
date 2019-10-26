@@ -21,6 +21,7 @@ def show_runtime(*algorithms):
     string = get_string()
     plt.xlabel('datasize(10k)')
     plt.ylabel('runtime(ms)')
+    plt.title('String Searching Algorithms')
     for algorithm in algorithms:
         runtime = []
         for i in datasize:
