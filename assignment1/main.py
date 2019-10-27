@@ -1,8 +1,8 @@
 import time
 import matplotlib.pyplot as plt
 from random import randint
-from bm import bm
 from naive import naive
+from bm import bm
 from kmp import kmp
 from kmp_nextval import kmp_next_val
 from sunday import sun
