@@ -5,4 +5,10 @@ Have no idea with installation? [Please Click here.](https://www.python.org/down
 
 How to run this project?  
   1. `pip install matplotlib`
-  2. `cd assignment1/ && python main.py`
+  2. `cd assignment1/ && python main.py`  
+
+Online judge:  
+![](assignment1/oj.png)
+
+Running results:  
+![](assignment1/results.png)
