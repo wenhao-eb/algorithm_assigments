@@ -12,3 +12,7 @@ Online judge:
 
 Running results:  
 ![](assignment1/results.png)
+
+### Assignment 2: Painter
+Running result on OJ:
+![](assignment2_painter/result.png)
