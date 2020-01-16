@@ -4,6 +4,8 @@ pipeline {
         stage('echo stage') {
             steps {
 	      echo "${ref}"   
+	      echo "${created}"
+	      echo "${deleted}"
             }
         }
     }
